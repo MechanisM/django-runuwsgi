@@ -2,16 +2,16 @@ from sys import version_info
 from setuptools import setup, find_packages
 
 kwargs = {
-    'name': 'django-yacapp',
+    'name': 'django-runuwsgi',
     'version': '0.1',
-    'description': 'A simple yet flexible ajax commenting system.',
+    'description': 'Integrates uwsgi and manage.py.',
     'author': 'Derrick Petzold',
     'author_email': 'dpetzold@gmail.com',
-    'url': 'http://github.com/dpetzold/django-yacapp/',
-    'keywords': 'django,ajax,comments',
+    'url': 'http://github.com/dpetzold/django-runuwsgi/',
+    'keywords': 'uwsgi,upstart,django',
     'license': 'BSD',
     'packages': [
-        'yacapp',
+        'runuwsgi',
     ],
     'include_package_data': True,
     'zip_safe': False,

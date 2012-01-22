@@ -17,11 +17,9 @@ from django.conf import settings
 from logging.config import dictConfig
 dictConfig(settings.LOGGING)
 
-#logger = logging.getLogger(__name__)
-logger = logging.getLogger('derrickpetzold')
+logger = logging.getLogger(__name__)
 
 import requests
-from bakku import util
 
 uwsgi_fmt = """
 {root}/bin/uwsgi \
@@ -37,7 +35,6 @@ uwsgi_fmt = """
         --processes {processes} \
         --max-requests {max_requests}
 """
-
 
 class Command(BaseCommand):
 

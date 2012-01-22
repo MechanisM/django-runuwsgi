@@ -1,0 +1,9 @@
+# file: /etc/event.d/uwsgi_example
+description "uWSGI server for example.com"
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+respawn
+
+exec {{ settings.SITE_DIR }}../bin/python {{ settings.SITE_DIR }}/manage.py runserver_uwsgi >> /var/log/uwsgi.log 2>&1
