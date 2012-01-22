@@ -1,10 +1,10 @@
 django-runuwsgi
 ==========================
-**Integrate running uwsgi and manage.py.**
+**Integrates running uwsgi with manage.py.**
 
 This app integrates virtualenv, uwsgi and manage.py along with some support 
 for ec2. It meant for use in conjuction with upstart. If ``UWSGI_HOST`` is to
-``<AWS>`` the host passed to --socket is set to the instance's private ip
+'<AWS>' the host passed to --socket is set to the instance's private ip
 address.
 
 .. contents:: Contents

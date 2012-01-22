@@ -8,7 +8,7 @@ kwargs = {
     'author': 'Derrick Petzold',
     'author_email': 'dpetzold@gmail.com',
     'url': 'http://github.com/dpetzold/django-runuwsgi/',
-    'keywords': 'uwsgi,upstart,django',
+    'keywords': 'uwsgi,upstart,django,virtualenv',
     'license': 'BSD',
     'packages': [
         'runuwsgi',
